@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Acme', sans-serif;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#canvas {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+}
+
+.game-over-scr {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0 , 0 , 0 , 0.5);
+    padding-top: 200px;
+    text-align: center;
+    display: none;
+}
+
+.controls {
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.controls p {
+    color: white;
+    margin: 10px;
+    padding: 0;
+}
+
+.controls .over {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.controls #score {
+    font-size: 30px;
+}
+
+.controls .replay {
+    border: 1px solid transparent;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.replay i {
+    font-size: 40px;
+    -webkit-transition: all 0.5s cubic-bezier(.14,.37,.92,.73);
+    transition: all 0.5s cubic-bezier(.14,.37,.92,.73);
+    cursor: pointer;
+}
+
+.controls .replay:hover i {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 798px) {
+    #canvas , .game-over-scr {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        background-color: rgba(0 , 0 , 0 , 0.5);
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        color: white;
+        padding: 70px 10px 0 10px;
+    }
+
+    .mobile p {
+        font-size: 40px;
+    }
+
+    .mobile i {
+        font-size: 50px;
+    }
+}
+
+/*# sourceMappingURL=/style.967ba849.css.map */
