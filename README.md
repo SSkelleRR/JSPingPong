@@ -6,4 +6,4 @@ Every bounce is 1 score.
 
 Move your mouse up and down to move your bar. 
 
-Player's side is the right one.
+Player's side is the left one.
